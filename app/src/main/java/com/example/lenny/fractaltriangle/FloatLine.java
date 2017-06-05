@@ -14,9 +14,6 @@ public class FloatLine {
         this.end = end;
     }
 
-    FloatLine(FloatLine fl){
-        fx= fl;
-    }
 
     public FloatPoint midPoint(){
         return new FloatPoint((start.x+end.x)/2,(start.y+end.y)/2 );
