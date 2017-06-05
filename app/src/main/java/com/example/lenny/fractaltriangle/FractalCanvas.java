@@ -48,7 +48,7 @@ public class FractalCanvas extends View {
     protected void onDraw(Canvas canvas) {
         // TODO Auto-generated method stub
         super.onDraw(canvas);
-        inscribeTriangle(canvas, new FloatPoint(100, 100), 900, 4);
+        inscribeTriangle(canvas, new FloatPoint(Utilities.convertDpToPixel(10f, this.getContext()), Utilities.convertDpToPixel(10f, this.getContext())), Utilities.convertDpToPixel(800f, this.getContext()), 4);
     }
 
     void inscribeTriangle(Canvas canvas, FloatPoint origin, float size, int iterations) {
